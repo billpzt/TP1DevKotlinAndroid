@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.infnet.tp1_deskotlinandroid.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_paisesFragment"
+            app:destination="@id/paisesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_estilosFragment"
+            app:destination="@id/estilosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paisesFragment"
+        android:name="com.infnet.tp1_deskotlinandroid.fragments.PaisesFragment"
+        android:label="fragment_paises"
+        tools:layout="@layout/fragment_paises" />
+    <fragment
+        android:id="@+id/estilosFragment"
+        android:name="com.infnet.tp1_deskotlinandroid.fragments.EstilosFragment"
+        android:label="fragment_estilos"
+        tools:layout="@layout/fragment_estilos" />
+</navigation>
